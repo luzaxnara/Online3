@@ -3,7 +3,7 @@ package epa.online03;
 import java.util.Scanner;
 
 /**
- *
+ *https://github.com/luzaxnara/Online3.git
  * @author Aran
  */
 public class EPAOnline03 {

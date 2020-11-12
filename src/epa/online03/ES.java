@@ -1,7 +1,7 @@
 package epa.online03;
 
 /**
- *
+ *https://github.com/luzaxnara/Online3.git
  * @author Aran
  */
 import java.util.InputMismatchException;
@@ -14,7 +14,7 @@ public class ES {
      *
      * @return un número entero
      */
-    public int leerEntero() {
+    public static int leerEntero() {
 
         Scanner teclado = new Scanner(System.in);
         int numero = 0;
@@ -46,7 +46,7 @@ public class ES {
      * del método
      * @return un numero entero
      */
-    public int leerEntero(String mensaje) {
+    public static int leerEntero(String mensaje) {
 
         System.out.println(mensaje);
 
@@ -62,7 +62,7 @@ public class ES {
      * @param maximo el número máximo que se debe introducir
      * @return devuelve un número entero comprendido entre los parámetros
      */
-    public int leerEntero(int minimo, int maximo) {
+    public static int leerEntero(int minimo, int maximo) {
 
         int numero = minimo - 1;
 
@@ -86,7 +86,7 @@ public class ES {
      * @param maximo el número máximo que se debe introducir
      * @return vuelve un número entero comprendido entre los parámetros
      */
-    public int leerEntero(String mensaje, int minimo, int maximo) {
+    public static int leerEntero(String mensaje, int minimo, int maximo) {
         System.out.println(mensaje);
 
         return leerEntero(minimo, maximo);
@@ -98,7 +98,7 @@ public class ES {
      *
      * @return un numero decimal
      */
-    public float leerDecimal() {
+    public static float leerDecimal() {
         Scanner teclado = new Scanner(System.in);
 
         float decimal = 0;
@@ -131,7 +131,7 @@ public class ES {
      * del método
      * @return un número decimal
      */
-    public float leerDecimal(String mensaje) {
+    public  static float leerDecimal(String mensaje) {
         System.out.println(mensaje);
 
         return leerDecimal();
@@ -142,7 +142,7 @@ public class ES {
      *
      * @return un número decimal largo
      */
-    public double leerDecimalLargo() {
+    public static double leerDecimalLargo() {
         Scanner teclado = new Scanner(System.in);
         double decimalLargo = 0;
         boolean repetir = true;
@@ -172,28 +172,28 @@ public class ES {
      * @param mensaje de tipo String que se muetra al principio de la ejecución
      * @return
      */
-    public double leerDecimalLargo(String mensaje) {
+    public static double leerDecimalLargo(String mensaje) {
         System.out.println(mensaje);
         return leerDecimalLargo();
 
     }
 
-    public void escribir(String mensaje) {
+    public static void escribir(String mensaje) {
 
         System.out.print(mensaje);
     }
 
-    public void escribirLn(String mensaje) {
+    public static void escribirLn(String mensaje) {
         System.out.println(mensaje);
     }
 
-    public String leerString() {
+    public static String leerString() {
         Scanner teclado = new Scanner(System.in);
 
         return teclado.next();
     }
 
-    public String leerString(String mensaje) {
+    public static String leerString(String mensaje) {
         System.out.println(mensaje);
         return leerString();
     }
